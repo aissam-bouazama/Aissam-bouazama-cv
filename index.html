@@ -3,285 +3,259 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV - Aissam Bouazama</title>
+  <meta name="description" content="CV de Aissam Bouazama - Desarrollador Web Full Stack">
+  <title>CV - Aissam Bouazama | Desarrollador Full Stack</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/estils.css">
   <style>
-    :root {
-      --primary-color: #0077b6;
-      --bg-color: #f0f4f8;
-      --white: #ffffff;
-      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      --transition: all 0.3s ease;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-color);
-      color: #333;
-      padding: 20px;
-    }
-
-    header {
-      background: var(--white);
-      border-radius: 12px;
-      padding: 30px 20px;
-      text-align: center;
-      box-shadow: var(--shadow);
-    }
-
-    .logo img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid var(--primary-color);
-      margin-bottom: 15px;
-      transition: transform 0.3s;
-    }
-
-    .logo img:hover {
-      transform: scale(1.05);
-    }
-
-    header h1 {
-      font-size: 2.2rem;
-      color: var(--primary-color);
-      margin-bottom: 8px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 15px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--primary-color);
-      font-weight: 600;
-      padding: 10px 16px;
-      border-radius: 8px;
-      background-color: #e0f7ff;
-      transition: var(--transition);
-    }
-
-    nav a:hover {
-      background-color: #caf0f8;
-    }
-
-    main {
-      margin-top: 30px;
-    }
-
-    .section {
-      display: none;
-      background: var(--white);
-      border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 25px;
-      box-shadow: var(--shadow);
-      animation: fadeIn 0.3s ease-in-out;
-    }
-
-    .section.active {
-      display: block;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    h2 {
-      color: var(--primary-color);
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-    }
-
-    p, li {
-      margin-bottom: 10px;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--primary-color);
-    }
-
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      header h1 {
-        font-size: 1.6rem;
-      }
-    }
-    .badges-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 15px;
-}
-
-.badge-group h3 {
-  margin-bottom: 12px;
-  color: var(--primary-color);
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.badge {
-  display: inline-block;
-  background-color: #e0f7ff;
-  color: var(--primary-color);
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  margin: 4px 6px 4px 0;
-  cursor: default;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-  user-select: none;
-}
-
-.badge:hover {
-  background-color: var(--primary-color);
-  color: white;
-  box-shadow: 0 4px 10px rgba(0, 119, 182, 0.6);
-}
-
-  </style>
+     </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="/img/1000037615.webp" alt="Aissam Bouazama" />
-    </div>
-    <h1>Aissam Bouazama</h1>
-    <nav>
-      <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#formacion">Formación</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="/img/1000037615.webp" alt="Aissam Bouazama" />
+      </div>
+      <div class="header-content">
+        <h1>Aissam Bouazama</h1>
+        <p class="subtitle">Desarrollador Web Full Stack</p>
+        <div class="contact-info">
+          <a href="mailto:bouazamaaissam@gmail.com">
+            <i class="fas fa-envelope"></i> bouazamaaissam@gmail.com
+          </a>
+          <a href="tel:+346624150358">
+            <i class="fas fa-phone"></i> +34 662 415 0358
+          </a>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
+          <li><a href="#experiencia"><i class="fas fa-briefcase"></i> Experiencia</a></li>
+          <li><a href="#proyectos"><i class="fas fa-code"></i> Proyectos</a></li>
+          <li><a href="#formacion"><i class="fas fa-graduation-cap"></i> Formación</a></li>
+          <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-   <section id="sobre-mi" class="section active">
-  <h2>Sobre mí</h2>
-  <p>
-    Soy desarrollador web Full Stack con enfoque en diseño responsivo, experiencia de usuario y desarrollo robusto tanto en frontend como backend. Apasionado por la innovación tecnológica y la mejora continua.
-  </p>
+    <main>
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h3><i class="fas fa-code"></i> Habilidades</h3>
+          <h4>Frontend</h4>
+          <div class="skills-list">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Tailwind CSS</span>
+          </div>
+          
+          <h4>Backend</h4>
+          <div class="skills-list">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">.NET</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">ASP.NET</span>
+          </div>
+          
+          <h4>Bases de Datos</h4>
+          <div class="skills-list">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MariaDB</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+          
+          <h4>Herramientas</h4>
+          <div class="skills-list">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">GitLab</span>
+          </div>
+        </div>
+        
+        <div class="sidebar-section">
+          <h3><i class="fas fa-language"></i> Idiomas</h3>
+          <p>Español: Nativo</p>
+          <p>Inglés: Básico</p>
+        </div>
+      </aside>
 
-  <div class="badges-container" style="margin-top:20px;">
-    <!-- Frontend -->
-    <div class="badge-group">
-      <h3>Frontend</h3>
-      <span class="badge">HTML5</span>
-      <span class="badge">CSS3 (Flexbox, Grid)</span>
-      <span class="badge">JavaScript (ES6+)</span>
-      <span class="badge">Bootstrap</span>
-      <span class="badge">Tailwind CSS</span>
-    </div>
+      <div class="content">
+        <section id="sobre-mi" class="section">
+          <h2><i class="fas fa-user"></i> Sobre mí</h2>
+          <p>
+            Desarrollador Web Full Stack con 1+ año de experiencia en diseño y desarrollo de aplicaciones web completas, 
+            tanto del lado del cliente (frontend) como del servidor (backend). Especializado en tecnologías como HTML, CSS, 
+            JavaScript, Laravel, PHP y .NET, con experiencia en bases de datos como MongoDB y MySQL.
+          </p>
+          <p>
+            Apasionado por crear interfaces atractivas y funcionales, desarrollar APIs robustas, gestionar bases de datos 
+            eficientes y desplegar aplicaciones en la nube. Comprometido con la escritura de código limpio, escalable y 
+            orientado a resultados. Experiencia trabajando con control de versiones (Git) y metodologías ágiles.
+          </p>
+        </section>
 
-    <!-- Backend -->
-    <div class="badge-group">
-      <h3>Backend</h3>
-      <span class="badge">PHP (Laravel)</span>
-      <span class="badge">.NET (C# / ASP.NET)</span>
-    </div>
+        <section id="experiencia" class="section">
+          <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <span class="experience-title">Desarrollador Web Full Stack</span> - 
+                <span class="experience-company">COMPSA ONLINE S.L</span>
+              </div>
+              <span class="experience-date">Junio 2024 - Actualidad</span>
+            </div>
+            <ul>
+              <li>Diseño y desarrollo de aplicaciones web completas, abarcando tanto frontend como backend.</li>
+              <li>Desarrollo de interfaces web modernas, responsivas y accesibles usando HTML, CSS y JavaScript.</li>
+              <li>Implementación de sistemas backend con Laravel (PHP) y .NET, integrando lógica de negocio, autenticación y seguridad.</li>
+              <li>Gestión de bases de datos MySQL y MongoDB, incluyendo diseño de estructuras y consultas optimizadas.</li>
+              <li>Despliegue de aplicaciones web en entornos en la nube (Heroku, Vercel, servidores propios).</li>
+              <li>Uso de Git para control de versiones y trabajo colaborativo en equipos de desarrollo.</li>
+            </ul>
+          </div>
+          
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <span class="experience-title">Desarrollador Front-End</span> - 
+                <span class="experience-company">Freelance</span>
+              </div>
+              <span class="experience-date">2023 - Actualidad</span>
+            </div>
+            <p class="experience-description">
+              Desarrollo de interfaces de usuario para diversos clientes, implementando diseños responsivos y accesibles.
+            </p>
+          </div>
+        </section>
 
-    <!-- Bases de Datos -->
-    <div class="badge-group">
-      <h3>Bases de Datos</h3>
-      <span class="badge">MySQL / MariaDB</span>
-      <span class="badge">MongoDB</span>
-    </div>
+        <section id="proyectos" class="section">
+          <h2><i class="fas fa-code"></i> Proyectos</h2>
+          <div class="project-item">
+            <h3 class="project-title">Portafolio Personal</h3>
+            <p class="project-description">
+              Single Page Application desarrollada con HTML, CSS y JavaScript puro. Diseño responsivo y moderno que muestra mis habilidades y proyectos.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+          
+          <div class="project-item">
+            <h3 class="project-title">App de Tareas</h3>
+            <p class="project-description">
+              Aplicación web para gestión de tareas desarrollada con React y Firebase. Incluye autenticación de usuarios, CRUD de tareas y filtrado por estados.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">Tailwind CSS</span>
+            </div>
+          </div>
+        </section>
 
-    <!-- Control de versiones -->
-    <div class="badge-group">
-      <h3>Control de versiones</h3>
-      <span class="badge">Git</span>
-      <span class="badge">GitHub</span>
-      <span class="badge">GitLab</span>
-    </div>
+        <section id="formacion" class="section">
+          <h2><i class="fas fa-graduation-cap"></i> Formación</h2>
+          <div class="education-item">
+            <div class="education-header">
+              <div>
+                <span class="education-title">CFGS Desarrollo de Aplicaciones Web</span> - 
+                <span class="education-institution">Institut Almatà – Institut de Balaguer</span>
+              </div>
+              <span class="education-date">2023 - 2025</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacto" class="section">
+          <h2><i class="fas fa-envelope"></i> Contacto</h2>
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:bouazamaaissam@gmail.com">bouazamaaissam@gmail.com</a>
+          </div>
+          <div class="contact-method">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+346624150358">+34 662 415 0358</a>
+          </div>
+          <div class="contact-method">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/aissam" target="_blank">linkedin.com/in/aissam</a>
+          </div>
+          <div class="contact-method">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/aissam" target="_blank">github.com/aissam</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2024 Aissam Bouazama. Todos los derechos reservados.</p>
+    </footer>
   </div>
-</section>
-
-
-    <section id="experiencia" class="section">
-      <h2>Experiencia</h2>
-      <ul>
-        <li>
-          <strong>Desarrollador Web Full Stack</strong> – COMPSA ONLINE S.L (2024 - Actual)<br>
-          Desarrollo de interfaces modernas (HTML, CSS, JS), integración de backends en Laravel y .NET, gestión de bases de datos (MySQL, MongoDB), despliegues cloud, y trabajo en equipo con Git.
-        </li>
-        <li>
-          <strong>Desarrollador Front-End</strong> – Freelance (2023 - Actualidad)
-        </li>
-      </ul>
-    </section>
-
-    <section id="proyectos" class="section">
-      <h2>Proyectos</h2>
-      <ul>
-        <li><strong>Portafolio Personal:</strong> SPA con HTML, CSS y JavaScript puro.</li>
-        <li><strong>App de Tareas:</strong> Aplicación web React + Firebase para gestión de tareas.</li>
-      </ul>
-    </section>
-
-    <section id="formacion" class="section">
-      <h2>Formación</h2>
-      <ul>
-        <li><strong>CFGS Desarrollo de Aplicaciones Web</strong> – Institut Almatà (2023 - 2025)</li>
-        <li><strong>Certificado B2 de Inglés</strong> – Cambridge</li>
-      </ul>
-    </section>
-
-    <section id="contacto" class="section">
-      <h2>Contacto</h2>
-      <p>📧 <a href="mailto:bouazamaaissam@gmail.com">bouazamaaissam@gmail.com</a></p>
-      <p>📞 +34 662 415 0358</p>
-      <p>🌐 <a href="https://linkedin.com/in/aissam" target="_blank">LinkedIn</a></p>
-    </section>
-  </main>
 
   <script>
-    const links = document.querySelectorAll("nav a");
-    const sections = document.querySelectorAll(".section");
-
-    function showSection(id) {
-      sections.forEach(section => {
-        section.classList.toggle("active", section.id === id);
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scrolling for navigation
+      document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 20,
+              behavior: 'smooth'
+            });
+            
+            // Update URL without reload
+            history.pushState(null, '', targetId);
+          }
+        });
       });
-    }
-
-    links.forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault();
-        const id = link.getAttribute("href").substring(1);
-        showSection(id);
-        history.pushState(null, "", `#${id}`);
-      });
-    });
-
-    window.addEventListener("load", () => {
-      const hash = window.location.hash.substring(1) || "sobre-mi";
-      showSection(hash);
+      
+      // Highlight active section in navigation
+      const sections = document.querySelectorAll('.section');
+      const navLinks = document.querySelectorAll('nav a');
+      
+      function setActiveLink() {
+        let index = sections.length;
+        
+        while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+        
+        navLinks.forEach(link => link.classList.remove('active'));
+        navLinks[index]?.classList.add('active');
+      }
+      
+      setActiveLink();
+      window.addEventListener('scroll', setActiveLink);
+      
+      // Print button functionality
+      const printButton = document.createElement('button');
+      printButton.innerHTML = '<i class="fas fa-print"></i> Imprimir CV';
+      printButton.style.position = 'fixed';
+      printButton.style.bottom = '20px';
+      printButton.style.right = '20px';
+      printButton.style.padding = '10px 15px';
+      printButton.style.backgroundColor = 'var(--primary-color)';
+      printButton.style.color = 'white';
+      printButton.style.border = 'none';
+      printButton.style.borderRadius = '5px';
+      printButton.style.cursor = 'pointer';
+      printButton.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+      printButton.style.zIndex = '1000';
+      printButton.addEventListener('click', () => window.print());
+      
+      document.body.appendChild(printButton);
     });
   </script>
 </body>
