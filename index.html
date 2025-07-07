@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Aissam Bouazama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0077b6;
+      --bg-color: #f0f4f8;
+      --white: #ffffff;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .logo img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid var(--primary-color);
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+
+    .logo img:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: var(--primary-color);
+      margin-bottom: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background-color: #e0f7ff;
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      background-color: #caf0f8;
+    }
+
+    main {
+      margin-top: 30px;
+    }
+
+    .section {
+      display: none;
+      background: var(--white);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: var(--shadow);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    p, li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary-color);
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
+    .badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.badge-group h3 {
+  margin-bottom: 12px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e0f7ff;
+  color: var(--primary-color);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 4px 6px 4px 0;
+  cursor: default;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  user-select: none;
+}
+
+.badge:hover {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 119, 182, 0.6);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/img/1000037615.webp" alt="Aissam Bouazama" />
+    </div>
+    <h1>Aissam Bouazama</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+   <section id="sobre-mi" class="section active">
+  <h2>Sobre mí</h2>
+  <p>
+    Soy desarrollador web Full Stack con enfoque en diseño responsivo, experiencia de usuario y desarrollo robusto tanto en frontend como backend. Apasionado por la innovación tecnológica y la mejora continua.
+  </p>
+
+  <div class="badges-container" style="margin-top:20px;">
+    <!-- Frontend -->
+    <div class="badge-group">
+      <h3>Frontend</h3>
+      <span class="badge">HTML5</span>
+      <span class="badge">CSS3 (Flexbox, Grid)</span>
+      <span class="badge">JavaScript (ES6+)</span>
+      <span class="badge">Bootstrap</span>
+      <span class="badge">Tailwind CSS</span>
+    </div>
+
+    <!-- Backend -->
+    <div class="badge-group">
+      <h3>Backend</h3>
+      <span class="badge">PHP (Laravel)</span>
+      <span class="badge">.NET (C# / ASP.NET)</span>
+    </div>
+
+    <!-- Bases de Datos -->
+    <div class="badge-group">
+      <h3>Bases de Datos</h3>
+      <span class="badge">MySQL / MariaDB</span>
+      <span class="badge">MongoDB</span>
+    </div>
+
+    <!-- Control de versiones -->
+    <div class="badge-group">
+      <h3>Control de versiones</h3>
+      <span class="badge">Git</span>
+      <span class="badge">GitHub</span>
+      <span class="badge">GitLab</span>
+    </div>
+  </div>
+</section>
+
+
+    <section id="experiencia" class="section">
+      <h2>Experiencia</h2>
+      <ul>
+        <li>
+          <strong>Desarrollador Web Full Stack</strong> – COMPSA ONLINE S.L (2024 - Actual)<br>
+          Desarrollo de interfaces modernas (HTML, CSS, JS), integración de backends en Laravel y .NET, gestión de bases de datos (MySQL, MongoDB), despliegues cloud, y trabajo en equipo con Git.
+        </li>
+        <li>
+          <strong>Desarrollador Front-End</strong> – Freelance (2023 - Actualidad)
+        </li>
+      </ul>
+    </section>
+
+    <section id="proyectos" class="section">
+      <h2>Proyectos</h2>
+      <ul>
+        <li><strong>Portafolio Personal:</strong> SPA con HTML, CSS y JavaScript puro.</li>
+        <li><strong>App de Tareas:</strong> Aplicación web React + Firebase para gestión de tareas.</li>
+      </ul>
+    </section>
+
+    <section id="formacion" class="section">
+      <h2>Formación</h2>
+      <ul>
+        <li><strong>CFGS Desarrollo de Aplicaciones Web</strong> – Institut Almatà (2023 - 2025)</li>
+        <li><strong>Certificado B2 de Inglés</strong> – Cambridge</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <p>📧 <a href="mailto:bouazamaaissam@gmail.com">bouazamaaissam@gmail.com</a></p>
+      <p>📞 +34 662 415 0358</p>
+      <p>🌐 <a href="https://linkedin.com/in/aissam" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <script>
+    const links = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll(".section");
+
+    function showSection(id) {
+      sections.forEach(section => {
+        section.classList.toggle("active", section.id === id);
+      });
+    }
+
+    links.forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const id = link.getAttribute("href").substring(1);
+        showSection(id);
+        history.pushState(null, "", `#${id}`);
+      });
+    });
+
+    window.addEventListener("load", () => {
+      const hash = window.location.hash.substring(1) || "sobre-mi";
+      showSection(hash);
+    });
+  </script>
+</body>
+</html>
