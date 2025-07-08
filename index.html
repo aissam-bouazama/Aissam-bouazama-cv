@@ -26,7 +26,7 @@
             <i class="fas fa-envelope"></i> bouazamaaissam@gmail.com
           </a>
           <a href="tel:+346624150358">
-            <i class="fas fa-phone"></i> +34 662 415 0358
+            <i class="fas fa-phone"></i> +34 624 150 358
           </a>
         </div>
       </div>
@@ -182,7 +182,7 @@
           </div>
           <div class="contact-method">
             <i class="fas fa-phone"></i>
-            <a href="tel:+346624150358">+34 662 415 0358</a>
+            <a href="tel:+346624150358">+34 624 150 358</a>
           </div>
           <div class="contact-method">
             <i class="fab fa-linkedin"></i>
@@ -192,6 +192,35 @@
             <i class="fab fa-github"></i>
             <a href="https://github.com/aissam" target="_blank">github.com/aissam</a>
           </div>
+          <div class="contact-method">
+           
+        <form action="https://formsubmit.co/bouazamaaissam@gmail.com" method="POST" class="contact-form">
+          <h2>Contáctame</h2>
+
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo mensaje de contacto desde tu portfolio">
+
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Tu email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+</section>
+
+
         </section>
       </div>
     </main>
@@ -201,62 +230,8 @@
     </footer>
   </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Smooth scrolling for navigation
-      document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-          
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 20,
-              behavior: 'smooth'
-            });
-            
-            // Update URL without reload
-            history.pushState(null, '', targetId);
-          }
-        });
-      });
-      
-      // Highlight active section in navigation
-      const sections = document.querySelectorAll('.section');
-      const navLinks = document.querySelectorAll('nav a');
-      
-      function setActiveLink() {
-        let index = sections.length;
-        
-        while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
-        
-        navLinks.forEach(link => link.classList.remove('active'));
-        navLinks[index]?.classList.add('active');
-      }
-      
-      setActiveLink();
-      window.addEventListener('scroll', setActiveLink);
-      
-      // Print button functionality
-      const printButton = document.createElement('button');
-      printButton.innerHTML = '<i class="fas fa-print"></i> Imprimir CV';
-      printButton.style.position = 'fixed';
-      printButton.style.bottom = '20px';
-      printButton.style.right = '20px';
-      printButton.style.padding = '10px 15px';
-      printButton.style.backgroundColor = 'var(--primary-color)';
-      printButton.style.color = 'white';
-      printButton.style.border = 'none';
-      printButton.style.borderRadius = '5px';
-      printButton.style.cursor = 'pointer';
-      printButton.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
-      printButton.style.zIndex = '1000';
-      printButton.addEventListener('click', () => window.print());
-      
-      document.body.appendChild(printButton);
-    });
-  </script>
+  <script src="JS/index.js"></script>
+   
+  
 </body>
 </html>
