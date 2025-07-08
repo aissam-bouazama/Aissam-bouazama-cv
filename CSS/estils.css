@@ -124,8 +124,6 @@
     }
 
     nav a {
-      width: 100%;
-      
       text-decoration: none;
       color: var(--white);
       font-weight: 500;
