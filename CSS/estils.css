@@ -124,6 +124,8 @@
     }
 
     nav a {
+      width: 100%;
+      
       text-decoration: none;
       color: var(--white);
       font-weight: 500;
@@ -132,6 +134,7 @@
       background-color: var(--primary-color);
       transition: var(--transition);
       display: inline-flex;
+      flex-direction: column;
       align-items: center;
       gap: 0.5rem;
       box-shadow: var(--shadow-sm);
@@ -426,3 +429,28 @@
   font-weight: 500;
 }
 
+.none{
+  display: none;
+}
+.block {
+  display: block;
+}
+@media (max-width: 1000px) {
+   nav a {
+     width: 100% ;
+      border-radius: 0;
+   }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+}
