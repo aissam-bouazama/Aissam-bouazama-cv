@@ -84,9 +84,9 @@
 
 
     // Toggle menu visibility on small screens
-    const menuToggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu");
-    menuToggle.addEventListener("click", () => {
-      menu.classList.toggle("block");
-      menu.classList.toggle("none");
-    });
+   const toggleButton = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
