@@ -308,6 +308,7 @@
    align-items: center;
    justify-content: center;
    font-size: 1.25rem;
+   
  }
 
  .contact-method a {
@@ -330,6 +331,7 @@
 
 
  .contact-form {
+  width: 100%;
    display: flex;
    flex-direction: column;
    gap: 1.5rem;
@@ -341,8 +343,14 @@
    gap: 0.5rem;
  }
 
+ .contact-form textarea{
+    height: 150px;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+ }
  .contact-form input,
  .contact-form textarea {
+
    padding: 0.75rem 1rem;
    border-radius: var(--border-radius);
    border: 1px solid var(--gray-light);
